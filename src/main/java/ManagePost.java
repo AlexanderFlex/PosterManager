@@ -1,7 +1,7 @@
 public class ManagePost {
     private String[] filmNames = new String[0];
     private String title;
-    public int size;
+    private int size;
 
     public ManagePost(){
         size = 10;
@@ -24,7 +24,7 @@ public class ManagePost {
         return filmNames;
     }
 
-    public String[] findLast(int size) {
+    public String[] findLast() {
         int resultLength;
         if (filmNames.length < size) {
             resultLength = filmNames.length;
